@@ -46,7 +46,7 @@ nav{
 }
 
 .nav__link--anchor-primary{
-  background-color: #3043C8;
+  background-color: var(--color-blue);
   padding: 8px 20px;
   border-radius: 50px;
   color: white;
@@ -59,7 +59,7 @@ nav{
 
 .personal__logo{
   font-size: 24px;
-  color: #3043C8;
+  color: var(--color-blue);
   margin: 0 12px;
   font-weight: bold;
 }

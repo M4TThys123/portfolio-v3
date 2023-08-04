@@ -18,33 +18,32 @@
             <span class="wave">👋🏻</span>
           </h1>
           <p class="about-me__info--para">
-            Ik ben een
-            <strong class="text--blue">Frontend Developer & Designer</strong>
-            met een sterke passie voor het bouwen van responsive webapplicaties met
-            een goede gebruikers ervaring die positieve effect hebben op de wereld.
+            Ik ben een <strong class="text--blue">Frontend Developer & Designer</strong> met een sterke passie voor het
+            bouwen van responsive webapplicaties met een goede gebruikerservaring die positieve effecten hebben op de
+            wereld.
           </p>
           <div class="about-me__links">
             <a
                 href="https://www.linkedin.com/in/matthijs-blauw-9a9573235/"
                 class="about-me__link"
                 target="_blank"
-                rel="noreferrer"><i class="bx bxl-linkedin" /></a
+                rel="noreferrer"><i class="bx bxl-linkedin"/></a
             >
             <a
                 href="https://github.com/M4TThys123"
                 class="about-me__link"
                 target="_blank"
-                rel="noreferrer"><i class="bx bxl-github" /></a
+                rel="noreferrer"><i class="bx bxl-github"/></a
             >
             <a
                 href="mailto:matthijs.blauw@gmail.com"
                 class="about-me__link"
-                target="_blank"><i class="bx bx-envelope" /></a
+                target="_blank"><i class="bx bx-envelope"/></a
             >
             <a
                 href="/"
                 class="about-me__link"
-                target="_blank"><i class="bx bxs-file-pdf" /></a
+                target="_blank"><i class="bx bxs-file-pdf"/></a
             >
           </div>
         </div>
@@ -76,6 +75,7 @@ export default {
   display: flex;
   flex-direction: column;
 }
+
 .about-me__info {
   display: flex;
   flex-direction: column;

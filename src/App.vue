@@ -30,7 +30,7 @@ export default {
 
 <style>
 :root {
-  --color-blue: #29539A;
+  --color-blue: #14539A;
 
 }
 * {
@@ -103,7 +103,7 @@ li {
 }
 
 .text--blue {
-  color: #3043C8;
+  color: var(--color-blue);
 }
 
 section:nth-child(even) {
@@ -112,6 +112,8 @@ section:nth-child(even) {
 
 .section__title {
   margin-bottom: 20px;
+  font-size: 36px;
+
 }
 
 /* Breakpoints */
