@@ -150,6 +150,7 @@ export default {
 <style scoped>
 h3 {
   text-align: center;
+  color: #242424;
 }
 
 .technologien .language__list > .language > .language__img--wrapper > img,
