@@ -3,9 +3,10 @@
 
     <AboutComponent></AboutComponent>
 
+    <TechStackComponent></TechStackComponent>
+
     <ProjectsComponent></ProjectsComponent>
 
-<!--    <TechStackComponent></TechStackComponent>-->
 <!--    <ProjectsComponent></ProjectsComponent>-->
 
   </div>
@@ -14,14 +15,14 @@
 <script>
 import AboutComponent from "@/components/About.vue";
 // import ProjectsComponent from "@/components/Projects.vue";
-// import TechStackComponent from "@/components/TechStack.vue";
+import TechStackComponent from "@/components/TechStack.vue";
 import ProjectsComponent from "@/components/Projects.vue";
 
 export default {
   name: 'App',
   components: {
     ProjectsComponent,
-    // TechStackComponent,
+    TechStackComponent,
     // ProjectsComponent,
     AboutComponent,
     },
@@ -91,11 +92,11 @@ li {
   flex: 1;
 }
 
-.container {
+.container-class {
   padding: 50px 0;
 }
 
-.row {
+.row-class {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;

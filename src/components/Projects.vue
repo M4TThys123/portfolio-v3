@@ -1,7 +1,7 @@
 <template>
   <section id="projects">
-    <div class="container">
-      <div class="row">
+    <div class="container-class">
+      <div class="row-class">
         <h2 class="section__title">
           Hier een aantal van mijn
           <span class="text--blue">projecten</span>

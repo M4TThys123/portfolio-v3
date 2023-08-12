@@ -10,8 +10,10 @@
   "dependencies": {
     "@prismicio/helpers": "^2.3.9",
     "@prismicio/vue": "^4.0.2",
+    "bootstrap": "^5.3.1",
     "core-js": "^3.8.3",
     "prismic-javascript": "^3.0.2",
+    "typescript": "^5.1.6",
     "vue": "^3.2.13"
   },
   "devDependencies": {

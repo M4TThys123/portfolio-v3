@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="row footer__row">
+    <div class="row-class footer__row">
       <a href="/" class="footer__anchor">
         <h3 class="footer__logo">MB</h3>
         <span class="footer__logo--popper">
@@ -49,13 +49,6 @@ export default {
 /* FOOTER */
 footer{
   background-color: #242424;
-}
-
-.row {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 12px;
 }
 
 .footer__row{

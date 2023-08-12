@@ -3,7 +3,7 @@
     <NavComponent></NavComponent>
 
     <div class="flex flex-1">
-      <div class="about-me__info row">
+      <div class="about-me__info row-class">
         <div class="about-me__info--container">
           <figure class="about-me__picture--mask">
             <img
