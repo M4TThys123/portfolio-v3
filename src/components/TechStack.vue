@@ -1,10 +1,10 @@
 <template>
-  <section id="projects">
+  <section id="techstack">
     <div class="container-class">
       <div class="row-class">
         <h2 class="section__title">
           Dit is mijn
-          <span class="text--blue">Tech Stack</span>
+          <span class="text--blue">Tech-Stack</span>
         </h2>
 
         <section class="technologien">
