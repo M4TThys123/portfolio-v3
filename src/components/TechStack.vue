@@ -6,19 +6,52 @@
           Dit is mijn
           <span class="text--blue">Tech Stack</span>
         </h2>
-      </div>
 
-      <section class="language__list">
-            <h3>Essentiële Webtechnologieën</h3>
-            <div class="language" v-for="tech in technologie" :key="tech.id">
+        <section class="technologien">
+          <h3 class="tech-title">Essentiële Webtechnologieën</h3>
+          <section class="language__list">
+            <div class="language" v-for="tech in technologien" :key="tech.id">
               <figure class="language__img--wrapper">
                 <img :src="`/images/icons/${tech.url}`" alt="" class="language__img">
-                <!--              <img src="/images/icons/Adobe_Illustrator.webp" alt="" class="language__img">-->
               </figure>
               <span class="language__name">{{ tech.name }}</span>
             </div>
-      </section>
-
+          </section>
+        </section>
+        <section class="tools">
+          <h3 class="tech-title">Ontwerp- en Ontwikkeltools</h3>
+          <section class="language__list">
+            <div class="language" v-for="tool in tools" :key="tool.id">
+              <figure class="language__img--wrapper">
+                <img :src="`/images/icons/${tool.url}`" alt="" class="language__img">
+              </figure>
+              <span class="language__name">{{ tool.name }}</span>
+            </div>
+          </section>
+        </section>
+        <section class="frameworks">
+          <h3>Framework</h3>
+          <section class="language__list">
+            <div class="language" v-for="framework in frameworks" :key="framework.id">
+              <figure class="language__img--wrapper">
+                <img :src="`/images/icons/${framework.url}`" alt="" class="language__img">
+              </figure>
+              <span class="language__name">{{ framework.name }}</span>
+            </div>
+          </section>
+        </section>
+        <section class="platforms">
+          <h3>Tools en Platforms</h3>
+          <section class="language__list">
+            <div class="language" v-for="platform in platforms" :key="platform.id">
+              <figure class="language__img--wrapper">
+                <img :src="`/images/icons/${platform.url}`" alt="" class="language__img">
+              </figure>
+              <span class="language__name">{{ platform.name }}</span>
+            </div>
+          </section>
+        </section>
+      </div>
     </div>
   </section>
 </template>
@@ -28,7 +61,7 @@ export default {
   name: "TechStackComponent",
   data() {
     return {
-      technologie: [
+      technologien: [
         {
           id: 1,
           name: "HTML",
@@ -50,8 +83,64 @@ export default {
           url: "TypeScript.webp"
         },
         // Add more objects for other technologies if needed
-      ]
-
+      ],
+      tools: [
+        {
+          id: 1,
+          name: "Adobe XD",
+          url: "Adobe_XD.webp"
+        },
+        {
+          id: 2,
+          name: "Adobe Illustrator",
+          url: "Adobe_Illustrator.webp"
+        },
+        {
+          id: 3,
+          name: "Adobe Photoshop",
+          url: "Adobe_Photoshop.webp"
+        },
+        {
+          id: 4,
+          name: "Webstorm",
+          url: "Webstorm.webp"
+        },
+        // Add more objects for other technologies if needed
+      ],
+      frameworks: [
+        {
+          id: 1,
+          name: "Svelte",
+          url: "Svelte.webp"
+        },
+        {
+          id: 2,
+          name: "React",
+          url: "React.webp"
+        },
+        {
+          id: 3,
+          name: "Vue.js",
+          url: "Vue.webp"
+        },
+      ],
+      platforms: [
+        {
+          id: 1,
+          name: "Prismic.io",
+          url: "Prismic.webp"
+        },
+        {
+          id: 2,
+          name: "Hygraph",
+          url: "Hygraph.webp"
+        },
+        {
+          id: 3,
+          name: "WordPress",
+          url: "WordPress.webp"
+        },
+      ],
     };
   }
 
@@ -59,11 +148,21 @@ export default {
 </script>
 
 <style scoped>
+h3 {
+  text-align: center;
+}
+
+.technologien .language__list > .language > .language__img--wrapper > img,
+.platforms .language__list > .language > .language__img--wrapper > img{
+border-radius: 15px;
+}
+
 /* TECH STACK */
 .language__list {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .language {
