@@ -74,6 +74,7 @@ export default {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  margin-top: 100px;
 }
 
 .about-me__info {

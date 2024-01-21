@@ -25,6 +25,21 @@ export default {
 </script>
 
 <style scoped>
+
+.blur{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: background 0.5s, backdrop-filter 0.5s;
+}
+
 /* NAVIGATION BAR */
 nav{
   height: 100px;

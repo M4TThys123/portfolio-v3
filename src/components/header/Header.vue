@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="blur">
     <nav>
       <router-link to="/" class="logo__link d-flex" @click="closeNav">
         <div class="personal__logo">Matthijs Blauw</div>
@@ -8,7 +8,7 @@
       <div class="nav__menu nav__list">
         <ul class="nav__link--list nav__item">
           <li>
-            <a href="/" class="nav__link nav__link--anchor link__hover-effect link__hover-effect--black">Technologie</a>
+            <a href="#techstack" class="nav__link nav__link--anchor link__hover-effect link__hover-effect--black">Technologie</a>
           </li>
           <li>
             <a href="#projects" class="nav__link nav__link--anchor link__hover-effect link__hover-effect--black">Projecten</a>
@@ -32,6 +32,7 @@ export default {
   data() {
     return {
       isNavOpen: false,
+      isScroll: true
     }
   },
   methods: {
@@ -180,7 +181,7 @@ nav{
 .blur{
   backdrop-filter: blur(24px);
   /*background-color: rgba(61, 149, 209, 0.4);*/
-  background-color: rgba(57, 128, 112, 0.4);
+  /*background-color: rgba(57, 128, 112, 0.4);*/
 
 }
 

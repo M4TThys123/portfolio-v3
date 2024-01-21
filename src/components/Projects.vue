@@ -132,6 +132,8 @@ export default {
 
 .project__list {
   padding-top: 40px;
+  padding-left: 0 !important;
+
 }
 .project:hover .project__description {
   opacity: 1;

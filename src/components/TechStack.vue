@@ -179,8 +179,10 @@ border-radius: 15px;
   display: flex;
   align-content: center;
   justify-content: center;
-  padding: 25px 16px;
+  padding: 25px 6px;
 }
+
+
 
 .language__img {
   width: 100%;
@@ -204,5 +206,21 @@ border-radius: 15px;
 
 .language:hover .language__name {
   transform: scale(1);
+}
+
+/* SM (for tablets - screens ≥ than 768px wide) */
+@media (width >= 768px) {
+  .language__img--wrapper {
+    padding: 25px 8px;
+  }
+}
+
+
+
+/* MD (for small laptops - screens ≥ than 992px wide) */
+@media (width >= 992px) {
+  .language__img--wrapper {
+    padding: 25px 16px;
+  }
 }
 </style>

@@ -2,17 +2,11 @@
   <div id="app">
     <HeaderComponent></HeaderComponent>
 
-    <section class="section about-section">
       <AboutComponent></AboutComponent>
-    </section>
 
-    <section class="section">
       <TechStackComponent></TechStackComponent>
-    </section>
 
-    <section class="section">
       <ProjectsComponent></ProjectsComponent>
-    </section>
 
 <!--    <ProjectsComponent></ProjectsComponent>-->
 
@@ -79,6 +73,9 @@ p {
   font-size: 16px;
 }
 
+button{
+  border: none;
+}
 a {
   text-decoration: none;
   position: relative;
