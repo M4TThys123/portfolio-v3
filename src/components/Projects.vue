@@ -33,13 +33,13 @@
 
                 <div class="project__description--links">
                   <a
-                      href="https://github.com/M4TThys123/SPRINT-12-Proof-of-Concept"
+                      :href="project.data.github_link"
                       class="project__description--link"
                       target="_blank"
                       rel="noreferrer"><i class="bx bxl-github" /></a
                   >
                   <a
-                      href="https://sprint-12-proof-of-concept.herokuapp.com/"
+                      :href="project.data.website_link"
                       class="project__description--link"
                       target="_blank"
                       rel="noreferrer"><i class="bx bx-link" /></a

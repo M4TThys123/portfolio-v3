@@ -1,11 +1,18 @@
 <template>
   <div id="app">
+    <HeaderComponent></HeaderComponent>
 
-    <AboutComponent></AboutComponent>
+    <section class="section about-section">
+      <AboutComponent></AboutComponent>
+    </section>
 
-    <TechStackComponent></TechStackComponent>
+    <section class="section">
+      <TechStackComponent></TechStackComponent>
+    </section>
 
-    <ProjectsComponent></ProjectsComponent>
+    <section class="section">
+      <ProjectsComponent></ProjectsComponent>
+    </section>
 
 <!--    <ProjectsComponent></ProjectsComponent>-->
 
@@ -17,10 +24,12 @@ import AboutComponent from "@/components/About.vue";
 // import ProjectsComponent from "@/components/Projects.vue";
 import TechStackComponent from "@/components/TechStack.vue";
 import ProjectsComponent from "@/components/Projects.vue";
+import HeaderComponent from "@/components/header/Header.vue";
 
 export default {
   name: 'App',
   components: {
+    HeaderComponent,
     ProjectsComponent,
     TechStackComponent,
     // ProjectsComponent,
@@ -107,13 +116,17 @@ li {
   color: var(--color-blue);
 }
 
-section:nth-child(even) {
+.section:nth-child(uneven) {
   background-color: #f8f8f8;
 }
 
 .section__title {
   margin-bottom: 20px;
   font-size: 36px;
+
+}
+
+.about-section{
 
 }
 

@@ -1,26 +1,23 @@
 <template>
- <header>
-   <nav>
-     <div class="personal__logo">Matthijs Blauw</div>
-
-     <ul class="nav__link--list">
-       <li>
-         <a href="/" class="nav__link--anchor link__hover-effect link__hover-effect--black">Technologie</a>
-       </li>
-       <li>
-         <a href="#projects" class="nav__link--anchor link__hover-effect link__hover-effect--black">Projecten</a>
-       </li>
-       <li>
-         <a href="mailto:matthijs.blauw@gmail.com" class="nav__link--anchor nav__link--anchor-primary">Contact</a>
-       </li>
-     </ul>
-   </nav>
- </header>
+  <nav>
+    <div class="personal__logo">Matthijs Blauw</div>
+    <ul class="nav__link--list">
+      <li>
+        <a href="/" class="nav__link--anchor link__hover-effect link__hover-effect--black">Technologie</a>
+      </li>
+      <li>
+        <a href="#projects" class="nav__link--anchor link__hover-effect link__hover-effect--black">Projecten</a>
+      </li>
+      <li>
+        <a href="mailto:matthijs.blauw@gmail.com" class="nav__link--anchor nav__link--anchor-primary">Contact</a>
+      </li>
+    </ul>
+  </nav>
 </template>
 
 <script>
 export default {
-  name: "NavComponent"
+  name: "NavComponent01"
 }
 </script>
 

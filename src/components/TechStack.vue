@@ -2,12 +2,12 @@
   <section id="techstack">
     <div class="container-class">
       <div class="row-class">
-        <h2 class="section__title">
+        <h2 class="section__title mb-4">
           Dit is mijn
           <span class="text--blue">Tech-Stack</span>
         </h2>
 
-        <section class="technologien">
+        <section class="technologien mb-5">
           <h3 class="tech-title">Essentiële Webtechnologieën</h3>
           <section class="language__list">
             <div class="language" v-for="tech in technologien" :key="tech.id">
@@ -18,7 +18,7 @@
             </div>
           </section>
         </section>
-        <section class="tools">
+        <section class="tools mb-5">
           <h3 class="tech-title">Ontwerp- en Ontwikkeltools</h3>
           <section class="language__list">
             <div class="language" v-for="tool in tools" :key="tool.id">
@@ -29,7 +29,7 @@
             </div>
           </section>
         </section>
-        <section class="frameworks">
+        <section class="frameworks mb-5">
           <h3>Framework</h3>
           <section class="language__list">
             <div class="language" v-for="framework in frameworks" :key="framework.id">
@@ -40,7 +40,7 @@
             </div>
           </section>
         </section>
-        <section class="platforms">
+        <section class="platforms mb-5">
           <h3>Tools en Platforms</h3>
           <section class="language__list">
             <div class="language" v-for="platform in platforms" :key="platform.id">
@@ -148,6 +148,7 @@ export default {
 </script>
 
 <style scoped>
+
 h3 {
   text-align: center;
   color: #242424;

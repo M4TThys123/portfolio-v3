@@ -1,6 +1,6 @@
 <template>
   <section id="about-me">
-    <NavComponent></NavComponent>
+<!--    <NavComponent></NavComponent>-->
 
     <div class="flex flex-1">
       <div class="about-me__info row-class">
@@ -60,11 +60,11 @@
 </template>
 
 <script>
-import NavComponent from "@/components/Nav.vue";
+// import NavComponent from "@/components/Nav.vue";
 
 export default {
   name: "AboutComponent",
-  components: {NavComponent}
+  components: { }
 }
 </script>
 
