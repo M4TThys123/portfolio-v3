@@ -40,11 +40,9 @@
                 class="about-me__link"
                 target="_blank"><i class="bx bx-envelope"/></a
             >
-            <a
-                href="/"
-                class="about-me__link"
-                target="_blank"><i class="bx bxs-file-pdf"/></a
-            >
+            <PDFLink pdf-file-name="Matthijs Blauw - Curriculum Vitae.pdf">
+              <i class="bx bxs-file-pdf"></i>
+            </PDFLink>
           </div>
         </div>
         <figure class="about-me__img--container">
@@ -62,9 +60,11 @@
 <script>
 // import NavComponent from "@/components/Nav.vue";
 
+import PDFLink from "@/components/PDFLink.vue";
+
 export default {
   name: "AboutComponent",
-  components: { }
+  components: {PDFLink}
 }
 </script>
 
