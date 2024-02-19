@@ -1,117 +1,90 @@
 <template>
-  <footer>
-    <div class="row-class footer__row">
-      <a href="/" class="footer__anchor">
-        <h3 class="footer__logo">MB</h3>
-        <span class="footer__logo--popper">
-        Top
-        <i class="bx bx-up-arrow-alt" />
-      </span>
-      </a>
-      <div class="footer__social--list">
-        <a
-            href="https://github.com/M4TThys123"
-            target="_blank" rel="noreferrer"
-            class="footer__social--link link__hover-effect link__hover-effect--white"
-        >GitHub</a
-        >
-        <a
-            href="https://www.linkedin.com/in/matthijs-blauw-9a9573235/"
-            target="_blank" rel="noreferrer"
-            class="footer__social--link link__hover-effect link__hover-effect--white"
-        >LinkedIn</a
-        >
-        <a
-            href="mailto:matthijs.blauw@gmail.com"
-            target="_blank"
-            class="footer__social--link link__hover-effect link__hover-effect--white"
-        >Email</a
-        >
-        <a
-            href="/"
-            target="_blank"
-            class="footer__social--link link__hover-effect link__hover-effect--white"
-        >CV</a
-        >
-      </div>
-      <div class="footer__copyright">Copyright © 2022 Matthijs Blauw</div>
+  <footer class="mt-5">
+    <div class="container footer-container">
+      <nav class="row">
+        <a href="https://www.linkedin.com/in/matthijs-blauw-9a9573235/" class="col-6" target="_blank">
+          <ProfileImage alt-text="Image of Matthijs Blauw" image-url="https://media.licdn.com/dms/image/D4E03AQEvgNXXzuIynA/profile-displayphoto-shrink_400_400/0/1708060120365?e=1714003200&v=beta&t=4S2RTqhvgIB0Z4Qp3YZcnwYNcgNINFVqrIOvgBktnn0"></ProfileImage>
+        </a>
+        <a href="https://www.matthijsblauw.nl/" class="col-6" target="_blank">
+          <LogoImage alt-text="Logo of Matthijs Blauw" image-url="https://avatars.githubusercontent.com/u/70703948?v=4"></LogoImage>
+        </a>
+      </nav>
+
+      <nav class="flex-row text-center">
+        <h4>Links</h4>
+        <div class="flex-row">
+          <a href="https://ilojo-bar-gbwo.vercel.app" class="footer-link" target="_blank">Ilojo Bar</a>
+          <a href="https://www.matthijsblauw.nl/" class="footer-link" target="_blank">Portfolio</a>
+          <a href="https://github.com/M4TThys123/WeatherAppPlus" class="footer-link" target="_blank">GitHub Repo</a>
+        </div>
+
+        <div class="flex-row mt-3">
+          <a href="https://www.linkedin.com/in/matthijs-blauw-9a9573235/" class="social-icon" target="_blank">
+            <i class="bx bxl-linkedin"></i>
+          </a>
+          <a href="https://github.com/M4TThys123" class="social-icon" target="_blank">
+            <i class="bx bxl-github"></i>
+          </a>
+          <a href="mailto:matthijs.blauw@gmail.com" class="social-icon" target="_blank">
+            <i class="bx bx-envelope"></i>
+          </a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="text-center p-3 copyright mt-4">
+      &#169; {{ currentYear }} Matthijs Blauw
     </div>
   </footer>
 </template>
 
 <script>
+import ProfileImage from "@/components/Footer/ProfileImage.vue";
+import LogoImage from "@/components/Footer/LogoImage.vue";
+
 export default {
-  name: "FooterComponent"
-}
+  name: "FooterComponent",
+  data() {
+    return {
+      currentYear: new Date().getFullYear()
+    };
+  },
+  components: {
+    LogoImage,
+    ProfileImage
+  }
+};
 </script>
 
 <style scoped>
 /* FOOTER */
-footer{
-  background-color: #242424;
+footer {
+  background-color: #14151A;
+  color: white;
+  padding-top: 2em;
 }
 
-.footer__row{
-  padding: 8% 0;
+.footer-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
-.footer__anchor{
-  position: relative;
-  margin-bottom: 20px;
+.footer-link {
+  margin: 0 1em;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 
-.footer__anchor:hover .footer__logo--popper{
-  transform: translateX(60px);
-  opacity: 1;
+.social-icon {
+  color: white;
+  font-size: 35px;
+  padding: 0 16px;
 }
 
-.footer__logo{
-  color: #fff;
-  font-size: 50px;
-}
-
-.footer__logo--popper{
-  color: #fff;
-  position: absolute;
-  right: 0;
-  top: 30px;
-  font-weight: 700;
-  opacity: 0;
-  transition: all 300ms ease;
-}
-.footer__social--list{
-  margin-bottom: 28px;
-  width: 100%;
-  max-width: 500px;
-  display: flex;
-  justify-content: space-around;
-
-}
-.footer__social--link,
-.footer__copyright{
-  color: #fff;
-}
-.link__hover-effect:after{
-  content: "";
-  position: absolute;
-  background-color: black;
-  height: 3px;
-  width: 0;
-  bottom: -3px;
-  right: 0;
-  transition: all 300ms ease;
-}
-
-.link__hover-effect:hover:after{
-  width: 100%;
-  left: 0;
-}
-
-.link__hover-effect--white::after{
-  background-color: white;
+.copyright {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 0.5em;
 }
 </style>

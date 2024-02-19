@@ -9,7 +9,7 @@
       <ProjectsComponent></ProjectsComponent>
 
 <!--    <ProjectsComponent></ProjectsComponent>-->
-
+      <FooterComponent> </FooterComponent>
   </div>
 </template>
 
@@ -19,10 +19,12 @@ import AboutComponent from "@/components/About.vue";
 import TechStackComponent from "@/components/TechStack.vue";
 import ProjectsComponent from "@/components/Projects.vue";
 import HeaderComponent from "@/components/header/Header.vue";
+import FooterComponent from "@/components/Footer.vue";
 
 export default {
   name: 'App',
   components: {
+    FooterComponent,
     HeaderComponent,
     ProjectsComponent,
     TechStackComponent,
