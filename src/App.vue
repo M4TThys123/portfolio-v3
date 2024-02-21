@@ -133,7 +133,7 @@ li {
 
 /* Small phones, tablets, large smartphones */
 @media (max-width: 768px) {
-  nav {
+  .nav {
     height: 68px;
   }
 

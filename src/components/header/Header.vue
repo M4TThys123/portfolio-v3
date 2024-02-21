@@ -19,16 +19,18 @@
         </ul>
       </div>
 
-      <HamburgerMenu @click="toggleNav" :is-nav-open="isNavOpen" class="menu__trigger"></HamburgerMenu>
+<!--      <HamburgerMenu @click="toggleNav" :is-nav-open="isNavOpen" class="menu__trigger"></HamburgerMenu>-->
     </nav>
   </header>
 </template>
 
 <script>
-import HamburgerMenu from "@/components/header/HamburgerMenu.vue";
+// import HamburgerMenu from "@/components/header/HamburgerMenu.vue";
 export default {
   name: "HeaderComponent",
-  components: {HamburgerMenu},
+  components: {
+    // HamburgerMenu
+  },
   data() {
     return {
       isNavOpen: false,

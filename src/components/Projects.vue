@@ -80,7 +80,12 @@ export default {
         const api = await Prismic.api(apiEndpoint);
         const response = await api.query(Prismic.Predicates.at('document.type', 'projects'));
 
-        this.projects = response.results;
+        // Sort projects based on last_publication_date
+        const sortedProjects = response.results.sort((a, b) => {
+          return new Date(b.last_publication_date) - new Date(a.last_publication_date);
+        });
+
+        this.projects = sortedProjects;
         console.log(this.projects)
 
         this.isLoading = false;
