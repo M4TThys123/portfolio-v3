@@ -147,7 +147,7 @@ export default {
 .project__description {
   position: absolute;
   top: 50%;
-  left: 90px;
+  left: 32px;
   transform: translateY(100%);
   max-width: 550px;
   z-index: 3;
@@ -186,6 +186,38 @@ export default {
 h3{
   text-align: left !important;
   color: #fff;
+}
+
+/* SM (for tablets - screens ≥ than 768px wide) */
+@media (width >= 768px) {
+  .project__description  {
+    left: 90px;
+  }
+
+
+  .project__description--para {
+    display: none;
+  }
+
+  .project__description {
+    padding: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .project__description--links {
+    display: flex;
+    justify-content: center;
+  }
+
+  .project__description--title {
+    font-size: 32px;
+    line-height: 1;
+  }
+
+  .project__description--sub-title h4{
+    margin: 12px 0;
+  }
 }
 
 </style>

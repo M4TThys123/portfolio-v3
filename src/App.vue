@@ -157,35 +157,6 @@ li {
 }
 
 /* Small phones */
-@media (max-width: 480px) {
-  .nav__link:not(:last-child) {
-    display: none;
-  }
 
-  .project__description--para {
-    display: none;
-  }
-
-  .project__description {
-    padding: 0;
-    left: 0;
-    width: 100%;
-  }
-
-  .project__description--links {
-    display: flex;
-    justify-content: center;
-  }
-
-  .project__description--title {
-    font-size: 32px;
-    line-height: 1;
-  }
-
-  .project__description--sub-title h4{
-    text-align: center;
-    margin: 12px 0;
-  }
-}
 
 </style>
