@@ -161,7 +161,9 @@ export default {
 }
 .project__description--para {
   margin: 16px 0;
+  display: none;
 }
+
 .project__description--link {
   font-size: 30px;
   margin-right: 16px;
@@ -191,12 +193,12 @@ h3{
 /* SM (for tablets - screens ≥ than 768px wide) */
 @media (width >= 768px) {
   .project__description  {
-    left: 90px;
+    left: 90px!important;
   }
 
 
   .project__description--para {
-    display: none;
+    display: block;
   }
 
   .project__description {
@@ -204,11 +206,7 @@ h3{
     left: 0;
     width: 100%;
   }
-
-  .project__description--links {
-    display: flex;
-    justify-content: center;
-  }
+  s
 
   .project__description--title {
     font-size: 32px;
