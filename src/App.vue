@@ -8,7 +8,6 @@
 
       <ProjectsComponent></ProjectsComponent>
 
-<!--    <ProjectsComponent></ProjectsComponent>-->
       <FooterComponent> </FooterComponent>
   </div>
 </template>
@@ -37,7 +36,6 @@ export default {
 <style>
 :root {
   --color-blue: #14539A;
-
 }
 * {
   padding: 0;

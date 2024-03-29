@@ -1,5 +1,5 @@
 <template>
-  <section id="about-me">
+  <section id="about-me" class="py-3">
 <!--    <NavComponent></NavComponent>-->
 
     <div class="flex flex-1">
