@@ -148,8 +148,8 @@ export default {
         },
         {
           id: 4,
-          name: ".NET Core v6",
-          url: "NET.webp"
+          name: ".NET",
+          url: "Net.webp"
         },
         {
           id: 3,
