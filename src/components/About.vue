@@ -1,16 +1,13 @@
 <template>
   <section id="about-me" class="py-3">
-<!--    <NavComponent></NavComponent>-->
+    <!--    <NavComponent></NavComponent>-->
 
     <div class="flex flex-1">
       <div class="about-me__info row-class">
         <div class="about-me__info--container">
           <figure class="about-me__picture--mask">
-            <img
-                class="about-me__picture"
-                src="https://avatars.githubusercontent.com/u/70703948?v=4"
-                alt="Image of undraw websirtes"
-            />
+            <img class="about-me__picture" src="https://avatars.githubusercontent.com/u/70703948?v=4"
+              alt="Image of undraw websirtes" />
           </figure>
           <h1 class="about-me__picture--title">
             Hey! Ik ben
@@ -18,39 +15,24 @@
             <span class="wave">👋🏻</span>
           </h1>
           <p class="about-me__info--para">
-            Ik ben een <strong class="text--blue">Frontend Developer & Designer</strong> met een sterke passie voor het
-            bouwen van responsive webapplicaties met een goede gebruikerservaring die positieve effecten hebben op de
-            wereld.
+            Ik ben een <strong class="text--blue">Software Developer & Designer</strong> met een sterke passie voor het
+            bouwen van robuuste en innovatieve oplossingen die een positieve impact hebben op de wereld en zorgen voor
+            een uitstekende gebruikerservaring.
           </p>
           <div class="about-me__links">
-            <a
-                href="https://www.linkedin.com/in/matthijs-blauw-9a9573235/"
-                class="about-me__link"
-                target="_blank"
-                rel="noreferrer"><i class="bx bxl-linkedin"/></a
-            >
-            <a
-                href="https://github.com/M4TThys123"
-                class="about-me__link"
-                target="_blank"
-                rel="noreferrer"><i class="bx bxl-github"/></a
-            >
-            <a
-                href="mailto:matthijs.blauw@gmail.com"
-                class="about-me__link"
-                target="_blank"><i class="bx bx-envelope"/></a
-            >
+            <a href="https://www.linkedin.com/in/matthijs-blauw-9a9573235/" class="about-me__link" target="_blank"
+              rel="noreferrer"><i class="bx bxl-linkedin" /></a>
+            <a href="https://github.com/M4TThys123" class="about-me__link" target="_blank" rel="noreferrer"><i
+                class="bx bxl-github" /></a>
+            <a href="mailto:matthijs.blauw@gmail.com" class="about-me__link" target="_blank"><i
+                class="bx bx-envelope" /></a>
             <PDFLink pdf-file-name="Matthijs Blauw - Curriculum Vitae.pdf">
               <i class="bx bxs-file-pdf"></i>
             </PDFLink>
           </div>
         </div>
         <figure class="about-me__img--container">
-          <img
-              src="images/undraw_websites_%2314539A.svg"
-              alt="Undraw website image"
-              class="about-me__img"
-          />
+          <img src="images/undraw_websites_%2314539A.svg" alt="Undraw website image" class="about-me__img" />
         </figure>
       </div>
     </div>
@@ -64,7 +46,7 @@ import PDFLink from "@/components/PDFLink.vue";
 
 export default {
   name: "AboutComponent",
-  components: {PDFLink}
+  components: { PDFLink }
 }
 </script>
 
@@ -105,9 +87,11 @@ export default {
   0% {
     transform: scale(0);
   }
+
   80% {
     transform: scale(1.1);
   }
+
   100% {
     transform: scale(1);
   }
@@ -145,6 +129,7 @@ export default {
     opacity: 0;
     transform: translateY(40px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -166,6 +151,7 @@ export default {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -180,9 +166,11 @@ export default {
   0% {
     transform: rotate(0);
   }
+
   50% {
     transform: rotate(30deg);
   }
+
   100% {
     transform: rotate(0);
   }

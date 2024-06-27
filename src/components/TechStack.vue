@@ -82,7 +82,21 @@ export default {
           name: "TypeScript",
           url: "TypeScript.webp"
         },
-        // Add more objects for other technologies if needed
+        {
+          id: 5,
+          name: "C#",
+          url: "CS.webp"
+        },
+        {
+          id: 6,
+          name: "SQL",
+          url: "SQL.webp"
+        },
+        {
+          id: 7,
+          name: "PHP",
+          url: "PHP.webp"
+        },
       ],
       tools: [
         {
@@ -105,7 +119,16 @@ export default {
           name: "Webstorm",
           url: "Webstorm.webp"
         },
-        // Add more objects for other technologies if needed
+        {
+          id: 5,
+          name: "MySQL Workbench",
+          url: "Workbench.webp"
+        },
+        {
+          id: 6,
+          name: "Docker Container",
+          url: "Docker.webp"
+        },
       ],
       frameworks: [
         {
@@ -122,6 +145,16 @@ export default {
           id: 3,
           name: "Vue.js",
           url: "Vue.webp"
+        },
+        {
+          id: 4,
+          name: ".NET Core v6",
+          url: "NET.webp"
+        },
+        {
+          id: 3,
+          name: "Laravel",
+          url: "Laravel.webp"
         },
       ],
       platforms: [
