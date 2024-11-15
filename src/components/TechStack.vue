@@ -97,6 +97,11 @@ export default {
           name: "PHP",
           url: "PHP.webp"
         },
+        {
+          id: 8,
+          name: "Python",
+          url: "Python.webp"
+        },
       ],
       tools: [
         {
