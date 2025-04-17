@@ -10,9 +10,8 @@
               alt="Image of undraw websirtes" />
           </figure>
           <h1 class="about-me__picture--title">
-            Hey! Ik ben
-            <span class="text--blue">Matthijs Blauw</span>&nbsp;
-            <span class="wave">👋🏻</span>
+            Hey! Ik ben <strong>Matthijs Blauw</strong> - Software Developer & Digital Designer
+            <span class="wave" aria-hidden="true">👋🏻</span>
           </h1>
           <p class="about-me__info--para">
             Ik ben een <strong class="text--blue">Software Developer & Designer</strong> met een sterke passie voor het
