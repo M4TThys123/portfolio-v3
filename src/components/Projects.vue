@@ -32,18 +32,33 @@
                 ></div>
 
                 <div class="project__description--links">
+                  <!-- GitHub link -->
                   <a
-                      :href="project.data.github_link"
-                      class="project__description--link"
-                      target="_blank"
-                      rel="noreferrer"><i class="bx bxl-github" /></a
+                    v-if="project.data.github_link"
+                    :href="project.data.github_link"
+                    class="project__description--link"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
+                    <i class="bx bxl-github" />
+                  </a>
+
+                  <!-- Website link -->
                   <a
-                      :href="project.data.website_link"
-                      class="project__description--link"
-                      target="_blank"
-                      rel="noreferrer"><i class="bx bx-link" /></a
+                    v-if="project.data.website_link"
+                    :href="project.data.website_link"
+                    class="project__description--link"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
+                    <i class="bx bx-link" />
+                  </a>
+
+                  <!-- SEO fallback -->
+                  <noscript>
+                    <a href="https://github.com/matthijsblauw" class="project__description--link">GitHub</a>
+                    <a href="https://www.matthijsblauw.nl" class="project__description--link">Website</a>
+                  </noscript>
                 </div>
               </div>
             </div>
