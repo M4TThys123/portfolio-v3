@@ -13,22 +13,27 @@
 
         <ul class="project__list">
           <li class="project" v-for="project in projects" :key="project.data.id">
-            <div class="project__wrapper">
+            <a
+              class="project__wrapper"
+              :href="project.data.website_link || project.data.github_link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <PrismicImage :field="project.data.project_image" class="project__img" alt="project image"/>
 
               <div class="project__description">
                 <div
-                    v-html="asHTML(project.data.project_title)"
-                    class="project__description--title"
+                  v-html="asHTML(project.data.project_title)"
+                  class="project__description--title"
                 ></div>
 
                 <div
-                    v-html="asHTML(project.data.sub_title)"
-                    class="project__description--sub-title"
+                  v-html="asHTML(project.data.sub_title)"
+                  class="project__description--sub-title"
                 ></div>
                 <div
-                    v-html="asHTML(project.data.project_paragraph)"
-                    class="project__description--para"
+                  v-html="asHTML(project.data.project_paragraph)"
+                  class="project__description--para"
                 ></div>
 
                 <div class="project__description--links">
@@ -39,6 +44,7 @@
                     class="project__description--link"
                     target="_blank"
                     rel="noopener noreferrer"
+                    @click.stop
                   >
                     <i class="bx bxl-github" />
                   </a>
@@ -50,18 +56,18 @@
                     class="project__description--link"
                     target="_blank"
                     rel="noopener noreferrer"
+                    @click.stop
                   >
                     <i class="bx bx-link" />
                   </a>
 
-                  <!-- SEO fallback -->
                   <noscript>
                     <a href="https://github.com/matthijsblauw" class="project__description--link">GitHub</a>
                     <a href="https://www.matthijsblauw.nl" class="project__description--link">Website</a>
                   </noscript>
                 </div>
               </div>
-            </div>
+            </a>
           </li>
         </ul>
       </div>
