@@ -5,10 +5,17 @@
     <div class="flex flex-1">
       <div class="about-me__info row-class">
         <div class="about-me__info--container">
+          <div class="about-me__pictures">
           <figure class="about-me__picture--mask">
             <img class="about-me__picture" src="https://avatars.githubusercontent.com/u/70703948?v=4"
-              alt="Image of undraw websirtes" />
+              alt="Image of undraw websites" />
           </figure>
+
+          <figure class="about-me__picture--mask">
+            <img class="about-me__picture" src="https://media.licdn.com/dms/image/v2/D4E03AQHwKOq21DzZNA/profile-displayphoto-shrink_800_800/B4EZWfo49YHMAk-/0/1742140052439?e=1751500800&v=beta&t=dkeCDMwRxCzkIzgdizC0eJYkJJkDXXF3H3DRxKRcwxA"
+              alt="Second profile image" />
+          </figure>
+        </div>
           <h1 class="about-me__picture--title">
             Hey! Ik ben <strong>Matthijs Blauw</strong> - Software Developer & Digital Designer
             <span class="wave" aria-hidden="true">👋🏻</span>
@@ -100,6 +107,30 @@ export default {
   width: 100%;
   transform: scale(1.5);
   padding-top: 5px;
+}
+.about-me__picture-right {
+  transform: scale(1.75);
+  padding-top: 5px;
+}
+
+.about-me__pictures {
+  display: flex;
+  gap: 20px; /* ruimte tussen de twee foto's */
+  justify-content: center; /* optioneel: centreert de foto's */
+  align-items: center; /* optioneel: centreert verticaal */
+}
+
+.about-me__picture--mask {
+  overflow: hidden;
+  width: 200px; /* of een andere vaste breedte */
+  height: 200px; /* hoogte kan je ook instellen */
+  flex-shrink: 0; /* zodat ze niet kleiner worden */
+}
+
+.about-me__picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .about-me__picture--title {
