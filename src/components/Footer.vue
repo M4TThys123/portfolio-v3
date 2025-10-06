@@ -31,7 +31,7 @@
           <a href="mailto:matthijs.blauw@gmail.com" class="social-icon" target="_blank">
             <i class="bx bx-envelope"></i>
           </a>
-          <a href="https://www.twitch.tv/m4tthythewiper" class="social-icon" target="_blank">
+          <a href="https://www.twitch.tv/m4ttythewiper" class="social-icon" target="_blank">
             <i class='bx bxl-twitch'></i>
           </a>
           <a href="https://www.youtube.com/@M4ttyTheWiper" class="social-icon" target="_blank">
