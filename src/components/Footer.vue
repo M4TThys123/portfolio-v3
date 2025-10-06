@@ -5,7 +5,7 @@
         <a href="https://www.linkedin.com/in/matthijs-blauw-9a9573235/" class="col-6" target="_blank">
           <ProfileImage 
             alt-text="Image of Matthijs Blauw" 
-            image-url="https://media.licdn.com/dms/image/v2/D4E03AQHwKOq21DzZNA/profile-displayphoto-shrink_800_800/B4EZWfo49YHMAk-/0/1742140052439?e=1751500800&v=beta&t=dkeCDMwRxCzkIzgdizC0eJYkJJkDXXF3H3DRxKRcwxA"
+            image-url="images/afbeelding_pak.png"
             />
         </a>
         <a href="https://www.matthijsblauw.nl/" class="col-6" target="_blank">

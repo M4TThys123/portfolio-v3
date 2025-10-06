@@ -31,7 +31,7 @@ export default {
 
 .footer-image {
   width: 100%;
-  transform: scale(1.5);
+  transform: scale(2.2);
   padding-top: 5px;
 }
 </style>
