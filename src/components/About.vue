@@ -12,7 +12,7 @@
           </figure>
 
           <figure class="about-me__picture--mask">
-            <img class="about-me__picture" src="https://media.licdn.com/dms/image/v2/D4E03AQHwKOq21DzZNA/profile-displayphoto-shrink_800_800/B4EZWfo49YHMAk-/0/1742140052439?e=1751500800&v=beta&t=dkeCDMwRxCzkIzgdizC0eJYkJJkDXXF3H3DRxKRcwxA"
+            <img class="about-me__picture" src="images/afbeelding_pak.png"
               alt="Second profile image" />
           </figure>
         </div>
@@ -122,9 +122,23 @@ export default {
 
 .about-me__picture--mask {
   overflow: hidden;
-  width: 200px; /* of een andere vaste breedte */
-  height: 200px; /* hoogte kan je ook instellen */
-  flex-shrink: 0; /* zodat ze niet kleiner worden */
+  width: 150px;
+  height: 150px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 300px) {
+  .about-me__picture--mask {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (min-width: 640px) {
+  .about-me__picture--mask {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 .about-me__picture {
