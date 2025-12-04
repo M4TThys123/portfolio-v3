@@ -40,16 +40,31 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Matthijs Blauw",
-    "url": "https://www.matthijsblauw.nl",
-    "jobTitle": "Software Developer & Digital Designer",
-    "sameAs": [
-      "https://www.linkedin.com/in/matthijsblauw",
-      "https://github.com/M4TThys123",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://www.matthijsblauw.nl/#website",
+        "url": "https://www.matthijsblauw.nl/",
+        "name": "Matthijs Blauw",
+        "alternateName": "Matthijs Blauw Portfolio",
+        "inLanguage": "nl-NL"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.matthijsblauw.nl/#person",
+        "name": "Matthijs Blauw",
+        "url": "https://www.matthijsblauw.nl/",
+        "jobTitle": "Software Developer & Digital Designer",
+        "image": "https://www.matthijsblauw.nl/og-image.jpg",
+        "sameAs": [
+          "https://www.linkedin.com/in/matthijsblauw",
+          "https://github.com/M4TThys123"
+        ]
+      }
     ]
   }
   </script>
+
 </head>
 <body>
 <noscript>
