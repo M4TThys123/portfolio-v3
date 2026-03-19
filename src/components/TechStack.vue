@@ -40,6 +40,28 @@
             </div>
           </section>
         </section>
+        <section class="ai-tools mb-5">
+          <h3>AI & Automation</h3>
+          <section class="language__list">
+            <div class="language" v-for="aiTool in aiTools" :key="aiTool.id">
+              <figure class="language__img--wrapper">
+                <img :src="`/images/icons/${aiTool.url}`" alt="" class="language__img">
+              </figure>
+              <span class="language__name">{{ aiTool.name }}</span>
+            </div>
+          </section>
+        </section>
+        <section class="libraries mb-5">
+          <h3>Libraries & Packages</h3>
+          <section class="language__list">
+            <div class="language" v-for="library in libraries" :key="library.id">
+              <figure class="language__img--wrapper">
+                <img :src="`/images/icons/${library.url}`" alt="" class="language__img">
+              </figure>
+              <span class="language__name">{{ library.name }}</span>
+            </div>
+          </section>
+        </section>
         <section class="platforms mb-5">
           <h3>Tools en Platforms</h3>
           <section class="language__list">
@@ -134,6 +156,11 @@ export default {
           name: "Docker Container",
           url: "Docker.webp"
         },
+        {
+          id: 7,
+          name: "Figma",
+          url: "Figma.svg"
+        },
       ],
       frameworks: [
         {
@@ -157,10 +184,48 @@ export default {
           url: "Net.webp"
         },
         {
-          id: 3,
+          id: 5,
           name: "Laravel",
           url: "Laravel.webp"
         },
+        {
+          id: 6,
+          name: "Ionic",
+          url: "Ionic.svg"
+        },
+      ],
+      aiTools: [
+        {
+          id: 1,
+          name: "n8n",
+          url: "n8n.svg"
+        },
+        {
+          id: 2,
+          name: "Ollama",
+          url: "Ollama.svg"
+        },
+        {
+          id: 3,
+          name: "Supabase",
+          url: "Supabase.svg"
+        },
+        {
+          id: 4,
+          name: "Claude",
+          url: "Claude.svg"
+        },
+        {
+          id: 5,
+          name: "ChatGPT",
+          url: "ChatGPT.svg"
+        },
+      ],
+      libraries: [
+        { id: 1, name: "Vuetify", url: "Vuetify.svg" },
+        { id: 2, name: "Three.js", url: "Threejs.svg" },
+        { id: 3, name: "GSAP", url: "GSAP.svg" },
+        { id: 4, name: "Bootstrap", url: "Bootstrap.svg" },
       ],
       platforms: [
         {
@@ -177,6 +242,16 @@ export default {
           id: 3,
           name: "WordPress",
           url: "WordPress.webp"
+        },
+        {
+          id: 4,
+          name: "Vercel",
+          url: "Vercel.svg"
+        },
+        {
+          id: 5,
+          name: "GitHub",
+          url: "GitHub.svg"
         },
       ],
     };

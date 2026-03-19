@@ -7,12 +7,23 @@
           <span class="text--blue">projecten</span>
         </h2>
 
+        <div class="project__filters">
+          <button
+            v-for="filter in techFilters"
+            :key="filter.value"
+            :class="['filter__btn', { 'filter__btn--active': activeFilter === filter.value }]"
+            @click="setFilter(filter.value)"
+          >
+            {{ filter.label }}
+          </button>
+        </div>
+
         <section v-if="isLoading" class="spinner-border" role="status">
           <span class="sr-only">Loading...</span>
         </section>
 
         <ul class="project__list">
-          <li class="project" v-for="project in projects" :key="project.data.id">
+          <li class="project" v-for="project in filteredProjects" :key="project.data.id">
             <a
               class="project__wrapper"
               :href="project.data.website_link || project.data.github_link"
@@ -88,13 +99,59 @@ export default {
     return {
       projects: [],
       isLoading: true,
+      techFilters: [
+        { label: "Alle", value: "all" },
+        { label: "Vue.js", value: "vue" },
+        { label: "SvelteKit", value: "svelte" },
+        { label: "Laravel", value: "laravel" },
+        { label: "WordPress", value: "wordpress" },
+        { label: "React", value: "react" },
+        { label: "Ionic", value: "ionic" },
+        { label: "AI", value: "ai" },
+      ],
+      activeFilter: "all",
+      projectTechMap: {
+        "portfolio": ["vue"],
+        "ilojo": ["svelte"],
+        "weather": ["svelte"],
+        "steeds": ["vue"],
+        "luckywear": ["vue"],
+        "lucky": ["vue"],
+        "floris": ["wordpress"],
+        "gv-westfriesland": ["wordpress"],
+        "gv westfriesland": ["wordpress"],
+        "bulbmanager": ["laravel", "vue", "ai"],
+        "bijfluit": ["ionic"],
+        "wijn": ["ionic"],
+        "e-commerce": ["react"],
+        "jbe": ["vue"],
+        "visitekaartje": ["svelte"],
+        "profile": ["svelte"],
+      },
     };
+  },
+  computed: {
+    filteredProjects() {
+      if (this.activeFilter === "all") return this.projects;
+      return this.projects.filter(project => {
+        const title = (project.data.project_title?.[0]?.text || "").toLowerCase();
+        for (const [keyword, techs] of Object.entries(this.projectTechMap)) {
+          if (title.includes(keyword) && techs.includes(this.activeFilter)) {
+            return true;
+          }
+        }
+        return false;
+      });
+    },
   },
   created() {
     this.fetchProjects();
   },
   methods: {
     asHTML,
+    setFilter(value) {
+      this.activeFilter = value;
+    },
     async fetchProjects() {
       try {
         const apiEndpoint = 'https://portfolio-matthijs.cdn.prismic.io/api/v2';
@@ -107,8 +164,6 @@ export default {
         });
 
         this.projects = sortedProjects;
-        console.log(this.projects)
-
         this.isLoading = false;
       } catch (error) {
         console.error('Error fetching data from Prismic:', error);
@@ -227,7 +282,6 @@ h3{
     left: 0;
     width: 100%;
   }
-  s
 
   .project__description--title {
     font-size: 32px;
@@ -237,6 +291,37 @@ h3{
   .project__description--sub-title h4{
     margin: 12px 0;
   }
+}
+
+.project__filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.filter__btn {
+  padding: 8px 16px;
+  border: 2px solid #14539A;
+  border-radius: 25px;
+  background: transparent;
+  color: #14539A;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 300ms ease;
+  font-family: "Lato", sans-serif;
+}
+
+.filter__btn:hover {
+  background: #14539A;
+  color: #fff;
+}
+
+.filter__btn--active {
+  background: #14539A;
+  color: #fff;
 }
 
 </style>

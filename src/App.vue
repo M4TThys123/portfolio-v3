@@ -8,26 +8,28 @@
 
       <ProjectsComponent></ProjectsComponent>
 
+      <HobbiesComponent></HobbiesComponent>
+
       <FooterComponent> </FooterComponent>
   </div>
 </template>
 
 <script>
 import AboutComponent from "@/components/About.vue";
-// import ProjectsComponent from "@/components/Projects.vue";
 import TechStackComponent from "@/components/TechStack.vue";
 import ProjectsComponent from "@/components/Projects.vue";
 import HeaderComponent from "@/components/header/Header.vue";
 import FooterComponent from "@/components/Footer.vue";
+import HobbiesComponent from "@/components/Hobbies.vue";
 
 export default {
   name: 'App',
   components: {
     FooterComponent,
+    HobbiesComponent,
     HeaderComponent,
     ProjectsComponent,
     TechStackComponent,
-    // ProjectsComponent,
     AboutComponent,
     },
 }
@@ -120,10 +122,6 @@ li {
 .section__title {
   margin-bottom: 20px;
   font-size: 36px;
-
-}
-
-.about-section{
 
 }
 
