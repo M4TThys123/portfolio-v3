@@ -23,13 +23,7 @@
             <span class="wave" aria-hidden="true">👋🏻</span>
           </h1>
           <p class="about-me__info--para">
-            25 jaar, uit De Goorn. Begonnen als designer bij <strong class="text--blue">CMD aan de HvA</strong>, maar al snel ontdekte ik dat ik liever bouw dan alleen ontwerp. Die combinatie van design en development is nu mijn grootste kracht — van concept tot productie, alles in eigen hand.
-          </p>
-          <p class="about-me__info--para">
-            Vandaag de dag bouw ik websites (Vue, SvelteKit, React, Laravel), mobile apps (Ionic), AI chatbots en automatiseringen (n8n, Ollama), en desktop software (.NET/C#). Bij <strong class="text--blue">Bulbmanager</strong> ben ik solo verantwoordelijk voor het volledige AI-platform — van chatbots en data-analyse tools tot workflow automation. Gegroeid van junior naar medior, van een team van 4 naar alles zelf draaien.
-          </p>
-          <p class="about-me__info--para">
-            Met <strong class="text--blue">12+ live projecten</strong> in uiteenlopende technologieën zoek ik altijd de volgende uitdaging. Momenteel specialiseer ik me verder in AI en alles wat daarbij komt kijken.
+            Ik bouw <strong class="text--blue">websites, apps en AI-oplossingen</strong> — van concept tot productie, alles in eigen hand.
           </p>
           <div class="about-me__links">
             <a href="https://www.linkedin.com/in/matthijs-blauw-9a9573235/" class="about-me__link" target="_blank"
