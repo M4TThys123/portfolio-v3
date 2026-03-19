@@ -10,6 +10,8 @@
 
       <HobbiesComponent></HobbiesComponent>
 
+      <OverMijComponent></OverMijComponent>
+
       <FooterComponent> </FooterComponent>
   </div>
 </template>
@@ -21,12 +23,14 @@ import ProjectsComponent from "@/components/Projects.vue";
 import HeaderComponent from "@/components/header/Header.vue";
 import FooterComponent from "@/components/Footer.vue";
 import HobbiesComponent from "@/components/Hobbies.vue";
+import OverMijComponent from "@/components/OverMij.vue";
 
 export default {
   name: 'App',
   components: {
     FooterComponent,
     HobbiesComponent,
+    OverMijComponent,
     HeaderComponent,
     ProjectsComponent,
     TechStackComponent,

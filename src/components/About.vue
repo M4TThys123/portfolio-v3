@@ -25,6 +25,9 @@
           <p class="about-me__info--para">
             Ik bouw <strong class="text--blue">websites, apps en AI-oplossingen</strong> — van concept tot productie, alles in eigen hand.
           </p>
+          <p class="about-me__info--para about-me__info--sub">
+            Medior developer met een design-achtergrond en 12+ live projecten.
+          </p>
           <div class="about-me__links">
             <a href="https://www.linkedin.com/in/matthijs-blauw-9a9573235/" class="about-me__link" target="_blank"
               rel="noreferrer"><i class="bx bxl-linkedin" /></a>
