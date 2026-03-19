@@ -13,7 +13,7 @@
             <p class="over-mij__para">
               Ik ben begonnen met <strong>Communicatie & Multimedia Design</strong> aan de Hogeschool van Amsterdam,
               waar ik alles leerde over design, UX en digitale communicatie. Daarna heb ik de
-              <strong>Associate degree Frontend Design & Development</strong> afgerond, waarmee ik
+              <strong>Frontend Design & Development</strong> afgerond, waarmee ik
               de brug sloeg van ontwerp naar code. Vervolgens ben ik aan de slag gegaan als software developer
               en doorgegroeid naar een medior fullstack rol — inclusief AI, backend en mobiele apps.
             </p>
